@@ -1,6 +1,10 @@
-import React from 'react'
-import Head from 'next/head'
+
+import React from 'react';
+import Head from 'next/head';
 import { BrowserRouter, Route } from 'react-router-dom';
+
+import UserProfile from '../components/UserProfile/UserProfile';
+
 import Login from '../components/Login';
 
 import Notifications from '../components/Notifications/Notifications';
@@ -12,6 +16,7 @@ const Home = () => (
       <title>Home</title>
       <link rel="icon" href="/favicon.ico" />
     </Head>
+    
     {/* <BrowserRouter>
       <Route exact path="/login" component={ Login } />
       <Route exact path="/userProfile" component={ UserProfile } />
@@ -20,6 +25,7 @@ const Home = () => (
     <Notifications />
     <ProgressBar />
     <Login/>
+    <UserProfile />
   </div>
 )
 

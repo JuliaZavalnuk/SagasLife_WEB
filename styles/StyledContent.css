@@ -1,0 +1,25 @@
+.content {
+    max-width: 100%;
+  background-color:335066;
+  position: relative;
+  height: 100%;
+  top: 500px;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+.post {
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 500px;
+  }
+
+  .post__outer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
