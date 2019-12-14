@@ -1,0 +1,36 @@
+import React, {Component} from 'react';
+
+import ReactNotifications from 'react-notifications-component';
+
+import { store } from 'react-notifications-component';
+import 'react-notifications-component/dist/theme.css';
+import 'animate.css';
+
+class Notifications extends Component {
+    render() {
+        return(
+            <>
+                <ReactNotifications />
+                <button
+                    onClick={() => {
+                    store.addNotification({
+                        title: 'Dropbox',
+                        message: 'Files were synced',
+                        type: 'default',                         // 'default', 'success', 'info', 'warning'
+                        container: 'bottom-left',                // where to position the notifications
+                        animationIn: ["animated", "fadeIn"],     // animate.css classes that's applied
+                        animationOut: ["animated", "fadeOut"],   // animate.css classes that's applied
+                        dismiss: {
+                        duration: 3000 
+                        }
+                    })
+                    }}
+                >
+                    Add notification
+                </button>
+            </>
+        )
+    }
+}
+
+export default Notifications;
