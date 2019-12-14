@@ -1,11 +1,18 @@
-// Component
+import React from 'react'
+import Head from 'next/head'
+import Nav from '../components/nav'
 
-const IndexPage = props => (
+//import '../styles/notifications.css';
+
+const Home = () => (
   <div>
-    <h1>Hello, I'm Main page</h1>
+    <Head>
+      <title>Home</title>
+      <link rel="icon" href="/favicon.ico" />
+    </Head>
+    {/* {login Vlad} */}
+    {/* {User profile Jenya} */}
   </div>
 )
 
-// Export
-
-export default IndexPage
+export default Home
