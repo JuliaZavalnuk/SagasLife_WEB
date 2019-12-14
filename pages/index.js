@@ -1,6 +1,7 @@
 import React from 'react'
 import Head from 'next/head'
 import { BrowserRouter, Route } from 'react-router-dom';
+import Login from '../components/Login';
 
 import Notifications from '../components/Notifications/Notifications';
 import ProgressBar from '../components/ProgressBar/ProgressBar';
@@ -18,6 +19,7 @@ const Home = () => (
 
     <Notifications />
     <ProgressBar />
+    <Login/>
   </div>
 )
 
