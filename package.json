@@ -16,5 +16,17 @@
   },
   "devDependencies": {
     "express": "^4.17.1"
-  }
+  },
+  "main": "next.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IASA-HUB/SagasLife_WEB.git"
+  },
+  "author": "IASA-KA-76",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IASA-HUB/SagasLife_WEB/issues"
+  },
+  "homepage": "https://github.com/IASA-HUB/SagasLife_WEB#readme",
+  "description": ""
 }
