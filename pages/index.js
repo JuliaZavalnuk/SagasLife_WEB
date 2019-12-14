@@ -1,6 +1,6 @@
-import React from 'react'
-import Head from 'next/head'
-import Nav from '../components/nav'
+import React from 'react';
+import Head from 'next/head';
+import UserProfile from '../components/UserProfile/UserProfile';
 
 //import '../styles/notifications.css';
 
@@ -11,7 +11,7 @@ const Home = () => (
       <link rel="icon" href="/favicon.ico" />
     </Head>
     {/* {login Vlad} */}
-    {/* {User profile Jenya} */}
+    <UserProfile />
   </div>
 )
 
