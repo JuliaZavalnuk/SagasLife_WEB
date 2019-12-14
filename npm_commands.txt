@@ -1,0 +1,13 @@
+How to start:
+npm install
+
+For development mode:
+npm run dev
+
+For production mode:
+npm run build
+npm run server
+
+Additional dependencies:
+npm install next@9.1.5
+npm update terser-webpack-plugin --depth 3
