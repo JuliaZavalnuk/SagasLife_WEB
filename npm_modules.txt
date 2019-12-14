@@ -3,3 +3,13 @@ npm install --save express
 
 Add css
 npm install --save @zeit/next-css
+
+Routing
+npm install --save react-router-dom
+npm install --save react-router
+
+Notifications
+npm install --save react-notifications-component animate.css
+
+ProgressBar
+npm install --save rc-progress
