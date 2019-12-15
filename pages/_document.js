@@ -15,7 +15,9 @@ class DocumentComponent extends Document {
     return (
       <html>
         <Head>
-          <link rel="icon" type="image/x-icon" href="/static/favicon.ico" />
+            <title>SagasLife</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1" />
+            <meta charSet="utf-8" />
         </Head>
 
         <body>
