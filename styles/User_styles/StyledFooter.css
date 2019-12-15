@@ -1,0 +1,33 @@
+.bar {
+   /* position: absolute;
+    top: 0;
+    left: 0;*/
+    background-color: black;
+    height:100px;
+    width:100%;
+
+    @media(max-width: 1300px) {
+      grid-template-columns: 1fr;
+      justify-content: center;
+    }
+  }
+  .sagas {
+    color: white;
+   /* position: absolute;
+    top: 5px;
+    right: 300px;*/
+
+  }
+
+  .word1 {
+    color: rgba(255, 255, 255, 0.85);
+   /* position: absolute;
+    top: 5px;
+    right: 200px;*/
+  }
+  .word2 {
+    color: rgba(255, 255, 255, 0.85);
+    /*position: absolute;
+    top: 5px;
+    right: 30px;*/
+  }
