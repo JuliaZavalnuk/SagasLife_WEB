@@ -1,5 +1,5 @@
-import Document, { Head, Main, NextScript } from 'next/document'
-import { ServerStyleSheet } from 'styled-components'
+import Document, { Head, Main, NextScript } from 'next/document';
+import { ServerStyleSheet } from 'styled-components';
 
 class DocumentComponent extends Document {
 
@@ -15,9 +15,7 @@ class DocumentComponent extends Document {
     return (
       <html>
         <Head>
-            <title>SagasLife</title>
-            <meta name="viewport" content="width=device-width, initial-scale=1" />
-            <meta charSet="utf-8" />
+            {this.props.styleTags}
         </Head>
 
         <body>

@@ -1,10 +1,22 @@
-import Head from "next/head";
+import Meta from "./Meta";
+import ReactNotifications from 'react-notifications-component';
+
+// Notifications styles
+import '../styles/notificationsPopUp.css';
+import 'animate.css';
+
+//main style
+import '../styles/main.css';
 
 const Layout = props => {
   return (
-    <div className="Layout">
-      <div className="Content">{props.children}</div>
-    </div>
+    <>
+      <Meta />
+      <div className="Layout">
+        <ReactNotifications />
+        <div className="Content">{props.children}</div>
+      </div>
+    </>
   );
 };
 

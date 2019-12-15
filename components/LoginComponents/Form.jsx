@@ -1,3 +1,4 @@
+import { store } from 'react-notifications-component';
 
 import React, { Component } from 'react'
 import GreenLine from "./GreenLine";
@@ -33,6 +34,17 @@ class Form extends Component{
     }
 
     handleSubmit = e => {
+        store.addNotification({
+            title: 'Dropbox',
+            message: 'Files were synced',
+            type: 'default',                         // 'default', 'success', 'info', 'warning'
+            container: 'bottom-left',                // where to position the notifications
+            animationIn: ["animated", "fadeIn"],     // animate.css classes that's applied
+            animationOut: ["animated", "fadeOut"],   // animate.css classes that's applied
+            dismiss: {
+            duration: 3000 
+            }
+        });
         e.preventDefault();
         if (formValid(this.state.formErrors)) {
             console.log(`
