@@ -7,6 +7,7 @@ class Login extends Component{
     return(
       <div className = 'FormDiv'>
       <Form/>
+      <SingWith/>
     </div>
     );
   }
