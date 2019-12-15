@@ -23,6 +23,7 @@ class UserProfile extends Component {
                 </div>
             </div>    
             <Nav/>
+            
                 <div className="content">
                     <div className="post__outer">
                         <div className="post">hello</div>
@@ -30,11 +31,15 @@ class UserProfile extends Component {
                     <div className="post__outer">
                         <div className="post" >second</div>
                     </div>
+                    
                     <div className="post__outer">
                         <div className="post" >third</div>
                     </div>
+                    
+                    <Footer/>   
                 </div>
-            <Footer/>
+                
+               
         </>
          
       )
