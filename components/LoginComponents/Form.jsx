@@ -39,6 +39,7 @@ class Form extends Component{
     }
 
     handleSubmit = e => {
+        e.preventDefault();
         // After press button you changed state, that leads to render ProgressBar element
         this.setState({isWaiting: true}); 
 
@@ -62,7 +63,7 @@ class Form extends Component{
                 }
             });
         }
-        e.preventDefault();
+
         if (formValid(this.state.formErrors)) {
             console.log(`
                 --submiting--
