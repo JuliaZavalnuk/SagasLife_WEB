@@ -5,6 +5,9 @@ import ReactNotifications from 'react-notifications-component';
 import '../styles/notificationsPopUp.css';
 import 'animate.css';
 
+//Progress styles 
+import '../styles/progress.css';
+
 //main style
 import '../styles/main.css';
 
