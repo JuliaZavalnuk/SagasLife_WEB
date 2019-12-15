@@ -1,32 +1,41 @@
 
 import React from 'react';
-import Head from 'next/head';
-import { BrowserRouter, Route } from 'react-router-dom';
-
-import UserProfile from '../components/UserProfile/UserProfile';
 
 import Login from '../components/Login';
 
 import Notifications from '../components/Notifications/Notifications';
 import ProgressBar from '../components/ProgressBar/ProgressBar';
 
-const Home = () => (
-  <div>
-    <Head>
-      <title>Home</title>
-      <link rel="icon" href="/favicon.ico" />
-    </Head>
-    
-    {/* <BrowserRouter>
-      <Route exact path="/login" component={ Login } />
-      <Route exact path="/userProfile" component={ UserProfile } />
-    </BrowserRouter> */}
+import Layout from '../components/Layout';
 
-    <Notifications />
+const Home = () => (
+  <Layout>
+    <Login />
+    <Notifications/>
     <ProgressBar />
-    <Login/>
-    <UserProfile />
-  </div>
+  </Layout>
 )
 
 export default Home
+
+
+// import { useRouter } from 'next/router'
+
+// export default function ActiveLink({ children, href }) {
+//   const router = useRouter()
+//   const style = {
+//     marginRight: 10,
+//     color: router.pathname === href ? 'red' : 'black',
+//   }
+
+//   const handleClick = e => {
+//     e.preventDefault()
+//     router.push(href)
+//   }
+
+//   return (
+//     <a href={href} onClick={handleClick} style={style}>
+//       {children}
+//     </a>
+//   )
+// }
