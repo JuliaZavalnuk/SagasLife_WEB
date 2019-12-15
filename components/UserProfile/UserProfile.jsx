@@ -6,9 +6,6 @@ import '../../styles/User_styles/StyledPage.css';
 import '../../styles/User_styles/StyledContent.css';
 
 
-
-// Component
-
 class UserProfile extends Component {
 
     render() {
@@ -19,7 +16,7 @@ class UserProfile extends Component {
                 <div className="user">
                     <div className="foto">image</div>
                     <div className="name">name</div>
-                    <div className="edit"><img src="../../static/edit.png"/></div>
+                    <div className="edit"><img src='/static/edit.png'/></div>
                     <div className="text">text</div>
                     <div className="Timelapses">Timelapses:</div>
                     <div className="Shots">Shots:</div>

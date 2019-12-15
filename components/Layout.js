@@ -1,10 +1,13 @@
-import Head from "next/head";
+import Meta from "./Meta";
 
 const Layout = props => {
   return (
-    <div className="Layout">
-      <div className="Content">{props.children}</div>
-    </div>
+    <>
+      <Meta />
+      <div className="Layout">
+        <div className="Content">{props.children}</div>
+      </div>
+    </>
   );
 };
 
