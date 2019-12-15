@@ -8,7 +8,7 @@ class ButtonSuccessLogin extends Component {
         store.addNotification({
             title: 'You have entered!',
             message: 'Check your feed',
-            type: 'warning',                         // 'default', 'success', 'info', 'warning'
+            type: 'success',                         // 'default', 'success', 'info', 'warning'
             container: 'top-center',                // where to position the notifications
             animationIn: ["animated", "fadeIn"],     // animate.css classes that's applied
             animationOut: ["animated", "fadeOut"],   // animate.css classes that's applied
