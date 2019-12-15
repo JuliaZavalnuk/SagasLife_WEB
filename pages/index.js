@@ -9,11 +9,7 @@ import ProgressBar from '../components/ProgressBar/ProgressBar';
 import Layout from '../components/Layout';
 
 const Home = () => (
-  <Layout>
     <Login />
-    <Notifications/>
-    <ProgressBar />
-  </Layout>
 )
 
 export default Home
