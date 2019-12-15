@@ -13,3 +13,7 @@ npm install --save react-notifications-component animate.css
 
 ProgressBar
 npm install --save rc-progress
+
+Images
+npm install --save next-images
+npm install babel-plugin-import-static-files --save
