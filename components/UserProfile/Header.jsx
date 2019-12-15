@@ -11,7 +11,7 @@ class Header extends React.Component {
       <>
         <div className="bar">
           
-              <img width="40px" height="40px" src="/static/logo.png" />
+              <img width="40px" height="40px" src="../../public/logo.png" />
               <p className="firstword">Sagas</p>
               <p className="secondword">  life</p>
              
