@@ -6,7 +6,7 @@ const Meta = () => (
     <meta charSet="utf-8" />
     <meta httpEquiv="Content-Security-Policy" content="default-src *; font-src 'self' data:; img-src * 'self' data: https:; script-src 'self' 'unsafe-inline' 'unsafe-eval' *; style-src  'self' 'unsafe-inline' *" />
 
-    <link ref="shortcut icon" href="/static/favicon.png" />
+    <link ref="shortcut icon" href="/static/logo.ico" />
     <link ref="stylesheet" type="text/css" href="/static/nprogress.css" />
 
     <title>Sagas Life</title>
