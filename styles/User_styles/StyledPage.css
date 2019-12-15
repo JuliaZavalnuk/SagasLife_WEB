@@ -5,6 +5,7 @@ body {
     line-height: 2;
     font-family: 'radnika_next';
     background-color:  #335066;
+    overflow: auto;
   }
 .page{
 position: absolute;

@@ -2,15 +2,16 @@ import React, {Component} from 'react';
 
 import CircularProgress from '@material-ui/core/CircularProgress';
 
-class ProgressBar extends Component {
+class ProgressBarExample extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            query: 'progress',
+            query: 'success',
         }
     }
 
-    componentDidMount() {
+    handleClick() {
+        this.setState({query:'progress'});
         setTimeout(() => {
             this.setState({query:'success'});
         }, 2500);
@@ -18,15 +19,18 @@ class ProgressBar extends Component {
 
     render() {
         return(
-            <>
+            <div className="notifications__block">
+                <button className="progress__button" onClick={() => this.handleClick()}>
+                    Test progressbar
+                </button>
                 {this.state.query === 'success' ? (null) : 
                 (<div className="progress">
                     <CircularProgress size='100%'/>
                 </div>
                 )}
-            </>
+            </div>
         )
     }
 }
 
-export default ProgressBar;
+export default ProgressBarExample;
