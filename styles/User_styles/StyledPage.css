@@ -12,8 +12,8 @@ position: absolute;
 top: 100px;
 left: 0;
 width: 100%;
-height:300px;
-background-image: linear-gradient(to top, rgba(41, 64, 82, 0),rgba(0, 0, 0, 0.6));
+height:400px;
+background-image: linear-gradient(to top, rgba(51, 80, 102), rgba(21,32,41));
 
 }
 .user {

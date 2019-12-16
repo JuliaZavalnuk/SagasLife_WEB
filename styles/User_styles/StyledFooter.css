@@ -1,7 +1,7 @@
-.bar {
-    /*position: absolute;
+.footer {
+    position: relative;
     bottom: 0;
-    left: 0;*/
+    right: 0;
     background-color: black;
     height:100px;
     width:100%;
@@ -11,23 +11,53 @@
       justify-content: center;
     }
   }
-  .sagas {
-    color: white;
-   /* position: absolute;
-    top: 5px;
-    right: 300px;*/
+
+  .block1 {
+    color: rgba(255, 255, 255, 0.85);
+    position: relative;
+    top: 0;
+    left: 300px;
+    height: 100px;
+    width: 300px;
+    
+  }
+  .block2 {
+    color: rgba(255, 255, 255, 0.85);
+    position: relative;
+    bottom: 100px;
+    left: 605px;
+    height: 100px;
+    width: 300px;
+    
+  }
+  .bw1 {
+    color: rgba(255, 255, 255, 0.85);
+    position: relative;
+    top: -15px;
+    font-size: 20px;
+   
+
 
   }
+  .bw2 {
+    color: rgba(255, 255, 255, 0.85);
+    position: relative;
+    top: -35px;
+    font-size: 20px;
+    
 
-  .word1 {
-    color: rgba(255, 255, 255, 0.85);
-   /* position: absolute;
-    top: 5px;
-    right: 200px;*/
   }
-  .word2 {
+  .w1 {
     color: rgba(255, 255, 255, 0.85);
-    /*position: absolute;
-    top: 5px;
-    right: 30px;*/
+    position: relative;
+    top: -15px;
+    font-size: 20px;
+
+  }
+  .w2 {
+    color: rgba(255, 255, 255, 0.85);
+    position: relative;
+    top: -35px;
+    font-size: 20px;
+
   }

@@ -1,14 +1,14 @@
 .ul{
-    width: 500px;
+    width: 650px;
     height: 50px;
     background-color:#335066;
     justify-self: center;
     display: flex;
     position: absolute;
     top: 400px;
-    left: 500px;
+    left: 430px;
     align-items: center;
-    border: 1px solid white;
+    
   
 }
 a {
@@ -24,7 +24,7 @@ a {
     color:rgba(192, 192, 192);;
     display: flex;
     top: 0;
-    left: 40px;
+    left: 10px;
     @media (max-width: 700px) {
     font-size: 10px;
     }
@@ -33,6 +33,7 @@ a {
   a:active {
     color:white;
   }
+  
 
 @media (max-width: 1300px) {
  
