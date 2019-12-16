@@ -1,0 +1,18 @@
+.notif__outer {
+    display: flex;
+    justify-content: center;
+    width: 650px;
+    height: 100%;
+    border: 1px solid white;
+    flex-flow: row wrap;
+  }
+.notif {
+   border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 650px;
+    margin: 2px;
+  }
+ 

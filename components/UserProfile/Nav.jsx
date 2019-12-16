@@ -14,7 +14,7 @@ const Nav = () => (
       <a>My shots</a>
     </Link>
 
-    <Link href="/notifications" passHref>
+    <Link href="/mynotifications" passHref>
       <a>Notifications</a>
     </Link>
  </div>

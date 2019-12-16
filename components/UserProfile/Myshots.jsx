@@ -33,6 +33,12 @@ class Myshots extends Component {
                         <div className="p">hello</div>
                         <div className="p">hello</div>
                         <div className="p">hello</div> 
+                        <div className="p">hello</div>
+                        <div className="p">hello</div>
+                        <div className="p">hello</div>
+                        <div className="p">hello</div>
+                        <div className="p">hello</div>
+                        <div className="p">hello</div> 
                     </div>
                   
                   
