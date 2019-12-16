@@ -6,7 +6,8 @@ import '../../styles/User_styles/StyledPage.css';
 import '../../styles/User_styles/StyledContent.css';
 
 
-class UserProfile extends Component {
+
+class Mytimelaps extends Component {
 
     render() {
       return (
@@ -36,15 +37,14 @@ class UserProfile extends Component {
                     </div>  
                    
                     
-                      
+                       
                 </div>
-            
+           
                 <Footer/>   
-        </div>
-        
-         
+     </div>
+           
       )
     }
   }
   
-  export default UserProfile
+  export default Mytimelaps

@@ -1,7 +1,5 @@
 .footer {
     position: relative;
-    bottom: 0;
-    right: 0;
     background-color: black;
     height:100px;
     width:100%;
@@ -60,4 +58,41 @@
     top: -35px;
     font-size: 20px;
 
+  }
+  .block3 {
+    position: relative;
+    bottom: 200px;
+    left: 1000px;
+    height: 100px;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .appstore {
+    position: relative;
+    top: -60px;
+    right: 320px;
+    
+  }
+  .google {
+    position: relative;
+    top: -60px;
+    right: 120px;
+   
+  }
+  .social {
+    position: relative;
+    top: -60px;
+    left: 80px;
+    
+  }
+  .img1, .img2 {
+    width: 150px;
+    height: 50px;
+  }
+  .img3 {
+    width: 170px;
+    height: 40px;
   }

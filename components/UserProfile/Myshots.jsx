@@ -4,9 +4,11 @@ import Nav from './Nav';
 import Footer from './Footer';
 import '../../styles/User_styles/StyledPage.css';
 import '../../styles/User_styles/StyledContent.css';
+import '../../styles/User_styles/StyledMyshots.css';
 
 
-class UserProfile extends Component {
+
+class Myshots extends Component {
 
     render() {
       return (
@@ -23,28 +25,27 @@ class UserProfile extends Component {
                 </div>
             </div>    
             <Nav/>
-            
-                <div className="content">
-                    <div className="post__outer">
-                        <div className="post">hello</div>
+             <div className="content">
+                    <div className="p__outer">
+                        <div className="p">hello</div>
+                        <div className="p">hello</div>
+                        <div className="p">hello</div>
+                        <div className="p">hello</div>
+                        <div className="p">hello</div>
+                        <div className="p">hello</div> 
                     </div>
-                    <div className="post__outer">
-                        <div className="post" >second</div>
-                    </div>
-                 <div className="post__outer">
-                        <div className="post" >third</div>
-                    </div>  
-                   
+                  
+                  
+                
                     
-                      
-                </div>
-            
+                     
+                </div>  
                 <Footer/>   
+               
         </div>
-        
          
       )
     }
   }
   
-  export default UserProfile
+  export default Myshots
