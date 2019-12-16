@@ -1,0 +1,21 @@
+.Head
+{
+    margin-top: 8%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    height: 60px;
+}
+.Logo{
+    margin-bottom: 72px;
+    margin-right: 16px;
+    margin-left: 35px;
+    display: inline-block;
+}
+
+.Label{
+    margin-bottom: 78px;
+  
+    display: inline-block;
+
+}
