@@ -12,7 +12,7 @@ class Myshots extends Component {
 
     render() {
       return (
-          <div className="body">
+        <div className="body">
           <Header/>
             <div className="page">
                 <div className="user">
@@ -24,7 +24,7 @@ class Myshots extends Component {
                     <div className="Shots">Shots:</div>
                 </div>
             </div>    
-            <Nav/>
+          <Nav/>
              <div className="content">
                     <div className="p__outer">
                         <div className="p">hello</div>
@@ -39,14 +39,9 @@ class Myshots extends Component {
                         <div className="p">hello</div>
                         <div className="p">hello</div>
                         <div className="p">hello</div> 
-                    </div>
-                  
-                  
-                
-                    
-                     
+                    </div>   
                 </div>  
-                <Footer/>   
+          <Footer/>   
                
         </div>
          

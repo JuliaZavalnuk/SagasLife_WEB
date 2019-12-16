@@ -8,8 +8,12 @@
     top: 400px;
     left: 430px;
     align-items: center;
+   
+    @media (max-width: 1300px) {
+      grid-template-columns: 1fr;
+      justify-content: center;
     
-  
+  }
 }
 a {
     padding: 1rem 3rem;
@@ -29,12 +33,26 @@ a {
     font-size: 10px;
     }
 }
+
   
   a:active {
     color:white;
+   
   }
-  
-
-@media (max-width: 1300px) {
- 
-}
+  a::after {
+    height: 2px;
+    background: #aec337;
+    content: '';
+    width: 0;
+    position: absolute;
+    transform: translateX(-50%);
+    transition: width 0.4s;
+    transition-timing-function: cubic-bezier(1, -0.65, 0, 2.31);
+    left: 50%;
+    margin-top: 2rem;
+  }
+  @media (max-width: 1300px) {
+      grid-template-columns: 1fr;
+      justify-content: center;
+    
+  }
