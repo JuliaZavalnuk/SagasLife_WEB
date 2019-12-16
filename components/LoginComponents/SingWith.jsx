@@ -1,26 +1,30 @@
-import React, { Component } from 'react';
-import '../../styles/main.css';
-import { loadGetInitialProps } from 'next/dist/next-server/lib/utils';
-//import Facebook from '../../static/logo.png'
+import React, { Component } from 'react'
+import '../../styles/FormStyles/FormFoot.css';
 
 
 class SingWith extends Component{
-
     render(){
         return(
-            <div>
-                {/*<Social img = {Facebook}/>*/}
+            <div className = 'SocialNetworks'>
+                <div className = 'or'>
+                    or
+                </div>
+                <div className = 'ButtonDiv'>
+                    <Button name = 'facebook' />
+                    <Button name = 'instagram' />
+                    <Button name = 'google' />
+                </div>
             </div>
+            
         );
-    }   
+    }
+    
 }
 
-const Social = props => (
-    <div>
-        <button>
-            {/*<img src = {props.img}></img>*/}
-        </button>
-    </div>
+const Button = props => (
+    <button className = 'SingButton'>
+        <img src= {`/static/${props.name}.png`} alt="n" className = 'button'/>
+    </button>
 );
 
 export default SingWith;
