@@ -6,6 +6,8 @@ import ButtonNotValidLogin from './ButtonNotValidLogin';
 import ButtonSuccessLogin from './ButtonSuccessLogin';
 import ButtonFailedImage from './ButtonFailedImage';
 
+import ProgressBarExample from '../ProgressBar/ProgressBarExample';
+
 class Notifications extends Component {
     render() {
         return(
@@ -14,6 +16,7 @@ class Notifications extends Component {
                 <ButtonNotValidLogin />
                 <ButtonSuccessLogin />
                 <ButtonFailedImage />
+                <ProgressBarExample />
             </div>
         )
     }

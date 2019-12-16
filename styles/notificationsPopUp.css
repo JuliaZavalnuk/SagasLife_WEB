@@ -57,12 +57,10 @@
 }
 
 .notification-default{
-    border-left:8px solid #0562c7;
 }
 
 .notification-default,
 .notification-default .timer{
-    background-color:#007bff;
 }
 
 .notification-default .timer-filler{

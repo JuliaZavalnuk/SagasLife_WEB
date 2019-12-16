@@ -1,4 +1,8 @@
+// connect to notifications
 import { store } from 'react-notifications-component';
+
+// connect to progress bar
+import ProgressBar from '../ProgressBar/ProgressBar';
 
 import React, { Component } from 'react'
 import GreenLine from "./GreenLine";
@@ -28,24 +32,38 @@ class Form extends Component{
             formErrors:{
                 email: "",
                 password: ""
-            }
+            },
+            isWaiting: false,
         };
 
     }
 
     handleSubmit = e => {
-        store.addNotification({
-            title: 'Dropbox',
-            message: 'Files were synced',
-            type: 'default',                         // 'default', 'success', 'info', 'warning'
-            container: 'bottom-left',                // where to position the notifications
-            animationIn: ["animated", "fadeIn"],     // animate.css classes that's applied
-            animationOut: ["animated", "fadeOut"],   // animate.css classes that's applied
-            dismiss: {
-            duration: 3000 
-            }
-        });
         e.preventDefault();
+        // After press button you changed state, that leads to render ProgressBar element
+        this.setState({isWaiting: true}); 
+
+        // In 2 seconds you make possibility to render it again
+        setTimeout(() => {
+            this.setState({isWaiting: false});
+        }, 2000)
+        
+        // Inside If statement you need to put some user's mistake.
+        // For example: user wrote wrong login or password
+        if(false) {
+            store.addNotification({
+                title: 'Wrong e-mail or password',
+                message: 'Please, type correct data',
+                type: 'warning',                        
+                container: 'top-center',               
+                animationIn: ["animated", "fadeIn"],     
+                animationOut: ["animated", "fadeOut"],   
+                dismiss: {
+                duration: 3000 
+                }
+            });
+        }
+
         if (formValid(this.state.formErrors)) {
             console.log(`
                 --submiting--
@@ -84,6 +102,10 @@ class Form extends Component{
     render(){
         return(
             <div className = 'SingIn'>
+                {this.state.isWaiting === false ? null :
+                    <ProgressBar />
+                }
+
                 <form onSubmit = {this.handleSubmit} onChange = {this.handleChange} noValidate>
                   <Input onChange = {this.handleChange} name = 'Email' placeholder = 'user@mail.com' type = 'email'/>
                   <Input name = 'Password' placeholder = '••••••••' type = 'password'/>
