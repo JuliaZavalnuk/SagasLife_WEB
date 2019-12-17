@@ -1,21 +1,4 @@
-.notif__outer {
-    display: flex;
-    justify-content: center;
-    width: 650px;
-    height: 100%;
-    border: 1px solid white;
-    flex-flow: row wrap;
-  }
-.notif {
-   border: 1px solid black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100px;
-    width: 650px;
-    margin: 2px;
-  }
-  .notific:hover::after,.notific:active::after {
+.timelaps:hover::after,.timelaps:active::after {
     height: 2px;
     background: #aec337;
     content: '';
@@ -27,7 +10,7 @@
     left: 50%;
     margin-top: 2rem;
   }
- /* .timelaps::after {
+  /*.notific::after {  
     height: 2px;
     background: #335066;
     content: '';
@@ -51,3 +34,4 @@
     left: 50%;
     margin-top: 2rem;
   }*/
+  

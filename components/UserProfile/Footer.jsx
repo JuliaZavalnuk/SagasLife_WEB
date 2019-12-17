@@ -37,7 +37,7 @@ class Footer extends React.Component {
           </div>
           <div className="block3">
             <div className="appstore"><img className="img1" src='/static/appstore.png'/></div>
-            <div className="google"><img className="img2" src='/static/google.png'/></div>
+            <div className="google"><img className="img2" src='/static/googleplay.png'/></div>
             <div className="social"><img className="img3" src='/static/social.png'/></div>
           </div>
       </div>

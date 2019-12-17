@@ -4,7 +4,7 @@ import Nav from './Nav';
 import Footer from './Footer';
 import '../../styles/User_styles/StyledPage.css';
 import '../../styles/User_styles/StyledContent.css';
-
+import '../../styles/User_styles/StyledMytimelaps.css';
 
 
 class Mytimelaps extends Component {

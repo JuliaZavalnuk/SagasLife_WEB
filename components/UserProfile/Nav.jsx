@@ -7,15 +7,15 @@ import Link from 'next/link'
 const Nav = () => (
   <div className="ul">
     <Link href="/mytimelaps" passHref>
-      <a>My timelapses</a>
+      <a className="timelaps">My timelapses</a>
     </Link>
 
     <Link href="/myshots" passHref>
-      <a>My shots</a>
+      <a className="shots">My shots</a>
     </Link>
 
     <Link href="/mynotifications" passHref>
-      <a>Notifications</a>
+      <a className="notific">Notifications</a>
     </Link>
  </div>
 )
