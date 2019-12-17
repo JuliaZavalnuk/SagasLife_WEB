@@ -1,0 +1,46 @@
+.or{
+    margin-top: 68px;
+    width: 23px;
+    height: 24px;
+    left: 709px;
+    top: 600px;
+
+    /* H5 */
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 24px;
+    /* identical to box height, or 100% */
+
+    text-align: center;
+    letter-spacing: 0.18px;
+
+    color: rgba(255, 255, 255, 0.87);
+
+}
+
+.SingButton{
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    width: 42px;
+    height: 30px;
+    background: rgba(255, 255, 255, 0.12);
+    /* Dark Deep Blue 55 */
+    padding-top: 5px;
+    border: 1px solid #7D9CB3;
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin: 16px;
+}
+
+.ButtonDiv{
+    width: 222px;
+    margin-left: auto;
+    margin-right: auto;
+   
+}

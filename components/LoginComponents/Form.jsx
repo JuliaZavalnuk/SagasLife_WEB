@@ -7,7 +7,7 @@ import ProgressBar from '../ProgressBar/ProgressBar';
 import React, { Component } from 'react'
 import GreenLine from "./GreenLine";
 import Link from 'next/link';
-//import './Form.css';
+import '../../styles/FormStyles/Form.css';
 
 const formValid = formErrors =>{
     let valid = true;
@@ -101,10 +101,11 @@ class Form extends Component{
 
     render(){
         return(
-            <div>
+            <div className = 'SingIn'>
                 {this.state.isWaiting === false ? null :
                     <ProgressBar />
                 }
+
                 <form onSubmit = {this.handleSubmit} onChange = {this.handleChange} noValidate>
                   <Input onChange = {this.handleChange} name = 'Email' placeholder = 'user@mail.com' type = 'email'/>
                   <Input name = 'Password' placeholder = '••••••••' type = 'password'/>
@@ -154,4 +155,4 @@ const Input = props => (
   
 
 
-export default Form;
+export default Form; 
