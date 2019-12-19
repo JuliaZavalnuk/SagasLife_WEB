@@ -6,15 +6,16 @@ import 'animate.css';
 
 import '../styles/progressBar/progress.css';
 
+import '../styles/generic/error.css';
 import '../styles/generic/main.css';
 
 const Layout = props => {
   return (
     <>
       <Meta />
-      <div className="Layout">
+      <div className="layout">
         <ReactNotifications />
-        <div className="Content">{props.children}</div>
+        <div className="layout__wrapper">{props.children}</div>
       </div>
     </>
   );
