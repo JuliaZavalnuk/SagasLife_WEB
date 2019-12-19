@@ -11,20 +11,22 @@ class UserProfile extends Component {
 
     render() {
       return (
-          <div className="body">
-          <Header/>
-            <div className="page">
-                <div className="user">
-                    <div className="foto">image</div>
-                    <div className="name">name</div>
-                    <div className="edit"><img src='/static/edit.png'/></div>
-                    <div className="text">text</div>
-                    <div className="Timelapses">Timelapses:</div>
-                    <div className="Shots">Shots:</div>
+        <>
+            <Header />
+            <div className="body">
+                <div className="page">
+                    <div className="user">
+                        <div className="foto">image</div>
+                        <div className="name">name</div>
+                        <div className="edit"><img src='/static/edit.png'/></div>
+                        <div className="text">text</div>
+                        <div className="Timelapses">Timelapses:</div>
+                        <div className="Shots">Shots:</div>
+                    </div>
                 </div>
-            </div>    
-            <Nav/>
-            
+
+                <Nav />
+                
                 <div className="content">
                     <div className="post__outer">
                         <div className="post">hello</div>
@@ -32,18 +34,13 @@ class UserProfile extends Component {
                     <div className="post__outer">
                         <div className="post" >second</div>
                     </div>
-                 <div className="post__outer">
+                    <div className="post__outer">
                         <div className="post" >third</div>
                     </div>  
-                   
-                    
-                      
-                </div>
-            
-                <Footer/>   
-        </div>
-        
-         
+                </div>                 
+            </div>
+            <Footer/>  
+        </>
       )
     }
   }

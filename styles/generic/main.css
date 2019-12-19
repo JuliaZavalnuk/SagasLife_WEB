@@ -10,3 +10,20 @@ body {
     background-image: linear-gradient(to top, rgba(51, 80, 102), rgba(21,32,41));
     overflow: hidden;
 }
+
+.layout {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 100%;
+}
+
+.layout__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+p {
+    display: inline-block;
+}
