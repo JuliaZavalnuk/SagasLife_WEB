@@ -2,8 +2,7 @@ body {
     padding: 0;
     margin: 0;
     /*font-size: 1.5rem;
-    line-height: 2;
-    font-family: 'radnika_next';*/
+    line-height: 2;*/
     background-color:  #335066;
     overflow: auto;
   }
@@ -14,7 +13,8 @@ left: 0;
 width: 100%;
 height:400px;
 background-image: linear-gradient(to top, rgba(51, 80, 102), rgba(21,32,41));
-
+font-size: 1.5rem;
+    line-height: 2;
 }
 .user {
     display: flex;
