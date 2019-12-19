@@ -4,14 +4,14 @@ import Nav from './Nav';
 import Footer from './Footer';
 import '../../styles/User_styles/StyledPage.css';
 import '../../styles/User_styles/StyledContent.css';
-import '../../styles/User_styles/StyledMytimelaps.css';
+import '../../styles/User_styles/StyledMynotifications.css';
 
 
-class UserProfile extends Component {
+class Mynotifications extends Component {
 
     render() {
       return (
-          <div className="body">
+        <div className="body">
           <Header/>
             <div className="page">
                 <div className="user">
@@ -26,21 +26,16 @@ class UserProfile extends Component {
             <Nav/>
             
                 <div className="content">
-                    <div className="post__outer">
-                        <div className="post">hello</div>
-                    </div>
-                    <div className="post__outer">
-                        <div className="post" >second</div>
-                    </div>
-                 <div className="post__outer">
-                        <div className="post" >third</div>
-                    </div>  
-                   
                     
-                      
+                    <div className="notif__outer">
+                        <div className="notif">hello</div>
+                        <div className="notif">hello</div>
+                        <div className="notif">hello</div>
+                    </div>
+                 
                 </div>
             
-                <Footer/>   
+            <Footer/>   
         </div>
         
          
@@ -48,4 +43,4 @@ class UserProfile extends Component {
     }
   }
   
-  export default UserProfile
+  export default Mynotifications

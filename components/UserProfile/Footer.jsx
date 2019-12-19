@@ -10,8 +10,7 @@ class Footer extends React.Component {
 
   render() {
     return (
-      <>
-        <div className="footer">
+      <div className="footer">
           
               <img width="40px" height="40px" src="../../static/logo.png" />
               <p className="firstword">Sagas</p>
@@ -36,8 +35,13 @@ class Footer extends React.Component {
               <a className="w2">Terms of use</a>
             </Link>
           </div>
-        </div>
-      </>
+          <div className="block3">
+            <div className="appstore"><img className="img1" src='/static/appstore.png'/></div>
+            <div className="google"><img className="img2" src='/static/googleplay.png'/></div>
+            <div className="social"><img className="img3" src='/static/social.png'/></div>
+          </div>
+      </div>
+      
     )
   }
 }
