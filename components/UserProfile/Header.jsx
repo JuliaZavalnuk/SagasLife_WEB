@@ -9,7 +9,7 @@ class Header extends React.Component {
     return (
       <>
         <div className="bar">
-              <img width="40px" height="40px" src="/static/logo.png" alt="n"/>
+              <img className="img_logo" width="40px" height="40px" src="/static/logo.png" alt="n"/>
               <p className="firstword">Sagas</p>
               <p className="secondword">  life</p>
               <p className="sagas">Sagas</p>
