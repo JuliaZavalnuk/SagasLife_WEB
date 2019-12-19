@@ -6,9 +6,11 @@ class ProgressBar extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            query: 'progress',
+            query: 'progress'
         }
     }
+
+    clas
 
     componentDidMount() {
         setTimeout(() => {
@@ -21,7 +23,7 @@ class ProgressBar extends Component {
             <>
                 {this.state.query === 'success' ? (null) : 
                 (<div className="progress">
-                    <CircularProgress size='100%'/>
+                    <CircularProgress size='100%' styles={{opacity: 0}}/>
                 </div>
                 )}
             </>

@@ -4,7 +4,7 @@
     align-items: center;
     position: fixed;
     left: calc(50% - 10vw);
-    top: calc(50% - 10vh);
+    top: calc(50% - 20vh);
     width: 20vw;
     height: 20vw;
 }
