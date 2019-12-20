@@ -1,33 +1,38 @@
 .bar {
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: black;
-    height:100px;
-    width:100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
+  height: 64px;
+  width: 100%;
 
-    @media(max-width: 1300px) {
-      grid-template-columns: 1fr;
-      justify-content: center;
-    }
-  }
+}
+
   .sagas {
     color: white;
     position: absolute;
     top: 5px;
     right: 300px;
-
   }
 
   .word1 {
     color: rgba(255, 255, 255, 0.85);
-    position: absolute;
-    top: 5px;
-    right: 200px;
   }
   .word2 {
     color: rgba(255, 255, 255, 0.85);
-    position: absolute;
-    top: 5px;
-    right: 30px;
   }
+
+.bar__logo {
+  margin: 0 20px;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  max-width: 150px;
+}
+
+.bar__links {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
