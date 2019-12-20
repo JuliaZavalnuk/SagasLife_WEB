@@ -6,13 +6,40 @@
   height: 64px;
   width: 100%;
 
+}.bar__logo {
+  margin: 0 20px;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  
 }
+
+.bar__links {
+  position: relative;
+  display: flex;
+  height: 100%;
+  width: 500px;
+  align-items: center;
+  justify-content: space-between ;
+  
+}
+.avatar{
+  margin-left: 56px;
+  margin-right: 28px;
+  height: 32px;
+  width: 32px;
+  border: 1px solid white;
+  border-radius: 100%;
+}
+.settings{
+  margin-right: 23px;
+}
+
 
   .sagas {
     color: white;
-    position: absolute;
-    top: 5px;
-    right: 300px;
   }
 
   .word1 {
@@ -22,17 +49,3 @@
     color: rgba(255, 255, 255, 0.85);
   }
 
-.bar__logo {
-  margin: 0 20px;
-  display: flex;
-  height: 100%;
-  align-items: center;
-  justify-content: center;
-  max-width: 150px;
-}
-
-.bar__links {
-  display: flex;
-  height: 100%;
-  align-items: center;
-}

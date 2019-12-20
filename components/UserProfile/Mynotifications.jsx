@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import Header from './Header';
 import Nav from './Nav';
 import Footer from './Footer';
-import '../../styles/User_styles/StyledPage.css';
-import '../../styles/User_styles/StyledContent.css';
-import '../../styles/User_styles/StyledMynotifications.css';
+import '../../styles/User_styles/styledPage.css';
+import '../../styles/User_styles/styledContent.css';
+import '../../styles/User_styles/styledMynotifications.css';
 
 
 class Mynotifications extends Component {
