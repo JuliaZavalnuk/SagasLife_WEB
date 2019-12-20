@@ -10,8 +10,6 @@ class ProgressBar extends Component {
         }
     }
 
-    clas
-
     componentDidMount() {
         setTimeout(() => {
             this.setState({query:'success'});
