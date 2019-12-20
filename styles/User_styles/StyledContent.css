@@ -1,9 +1,15 @@
 .body{
   width: 100%;
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-image: linear-gradient(to top, rgba(51, 80, 102), rgba(21,32,41));
 }
 .content {
-  max-width: 100%;
-  background-color: #335066;
+  width: 100%;
+  
+  margin-top: 24px;
   position: relative;
   display: flex;
   align-items: center;
@@ -15,8 +21,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 500px;
-    width: 500px;
+    height: 656px;
+    width: 480px;
   }
 
   .post__outer {

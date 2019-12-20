@@ -15,7 +15,7 @@
     width: 650px;
     margin: 2px;
   }
-  .notific:hover::after,.notific:active::after {
+  .notific:active::after {
     height: 2px;
     background: #aec337;
     content: '';
@@ -27,27 +27,3 @@
     left: 50%;
     margin-top: 2rem;
   }
- /* .timelaps::after {
-    height: 2px;
-    background: #335066;
-    content: '';
-    width: 150px;
-    position: absolute;
-    transform: translateX(-50%);
-    transition: width 0.4s;
-    transition-timing-function: cubic-bezier(1, -0.65, 0, 2.31);
-    left: 50%;
-    margin-top: 2rem;
-  }
-  .shots::after {
-    height: 2px;
-    background: #335066;
-    content: '';
-    width: 150px;
-    position: absolute;
-    transform: translateX(-50%);
-    transition: width 0.4s;
-    transition-timing-function: cubic-bezier(1, -0.65, 0, 2.31);
-    left: 50%;
-    margin-top: 2rem;
-  }*/

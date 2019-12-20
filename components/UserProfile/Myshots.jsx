@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import Header from './Header';
 import Nav from './Nav';
 import Footer from './Footer';
-import '../../styles/User_styles/StyledPage.css';
-import '../../styles/User_styles/StyledContent.css';
-import '../../styles/User_styles/StyledMyshots.css';
+import '../../styles/User_styles/styledPage.css';
+import '../../styles/User_styles/styledContent.css';
+import '../../styles/User_styles/styledMyshots.css';
 
 
 
@@ -40,7 +40,7 @@ class Myshots extends Component {
                         <div className="p">hello</div>
                         <div className="p">hello</div> 
                     </div>   
-                </div>  
+              </div>  
           <Footer/>   
                
         </div>

@@ -1,11 +1,19 @@
 .footer {
     display: flex;
     flex-wrap: nowrap;
+    align-items: center;
+  justify-content: space-between;
     background-color: black;
     height: 88px;
     width:100%;
   }
-
+.block__logo{
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+}
   .block1 {
     color: rgba(255, 255, 255, 0.85);
     position: relative;
@@ -17,65 +25,23 @@
     width: 300px;
     
   }
-  .bw1 {
-    color: rgba(255, 255, 255, 0.85);
-    position: relative;
-    top: -15px;
-    font-size: 20px;
-  }
-  .bw2 {
-    color: rgba(255, 255, 255, 0.85);
-    position: relative;
-    top: -35px;
-    font-size: 20px;
-    
-
-  }
-  .w1 {
-    color: rgba(255, 255, 255, 0.85);
-    position: relative;
-    top: -15px;
-    font-size: 20px;
-
-  }
-  .w2 {
-    color: rgba(255, 255, 255, 0.85);
-    position: relative;
-    top: -35px;
-    font-size: 20px;
-
-  }
   .block3 {
     position: relative;
-    width: 500px;
+    width: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
     
   }
-  .appstore {
-    position: relative;
-    top: -60px;
-    right: 320px;
-    
-  }
-  .google {
-    position: relative;
-    top: -60px;
-    right: 120px;
-   
-  }
   .social {
+    margin-right: 52px;
     position: relative;
-    top: -60px;
-    left: 80px;
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     
   }
-  .img1, .img2 {
-    width: 150px;
-    height: 50px;
-  }
-  .img3 {
-    width: 170px;
-    height: 40px;
+  .img2,.img3{
+    margin-left: 10px ;
   }
