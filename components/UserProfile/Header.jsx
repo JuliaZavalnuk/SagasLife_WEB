@@ -2,7 +2,7 @@ import '../../styles/User_styles/styledHeader.css';
 import '../../styles/User_styles/styledLogo.css';
 import Link from 'next/link'
 
-// Component
+
 
 class Header extends React.Component {
 
@@ -16,6 +16,9 @@ class Header extends React.Component {
         </div>
 
         <div className="bar__links">
+          <div className="search">
+          <img  src='/static/search.png'/>
+          </div>
           <div className="sagas">
             <Link href="/lenta" passHref>
             <a >Sagas</a>

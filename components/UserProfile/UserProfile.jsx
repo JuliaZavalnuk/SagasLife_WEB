@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Header from './Header';
 import Nav from './Nav';
+import InsidePost from './InsidePost';
 import Footer from './Footer';
 import '../../styles/User_styles/styledPage.css';
 import '../../styles/User_styles/styledContent.css';
@@ -29,13 +30,22 @@ class UserProfile extends Component {
                 
                 <div className="content">
                     <div className="post__outer">
-                        <div className="post">hello</div>
+                        <div className="post">
+                           
+                            <InsidePost />
+                        </div>
                     </div>
                     <div className="post__outer">
-                        <div className="post" >second</div>
+                        <div className="post" >
+                            
+                            <InsidePost />
+                        </div>
                     </div>
                     <div className="post__outer">
-                        <div className="post" >third</div>
+                        <div className="post" >
+                           
+                            <InsidePost />
+                        </div>
                     </div>  
                 </div>                 
             </div>

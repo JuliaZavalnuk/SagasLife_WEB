@@ -1,0 +1,110 @@
+.content_set{
+    width: 464px;
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    flex-wrap: wrap;
+
+}
+.topic{
+    margin-top: 70px;
+    width: 100%;
+    height: 36px;
+    font-family: Roboto;
+    font-size: 34px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.06;
+    letter-spacing: normal;
+    color: white;
+}
+.e-mail{
+    margin-top: 24px;
+    width: 369px;
+    height:40px;
+    border: 1px solid white;
+    background-color:rgba(69, 65, 105, 0.26) ;
+}
+.word{
+    display: flex;
+    color: #aec337;
+    font-size: 12px;
+}
+.user_email{
+    display: flex;
+    color: white;
+    font-size: 16px;
+    right: 20px;
+}
+.password{
+    margin-top: 24px;
+    width: 100%;
+    height: 16px;
+    font-size: 16px;
+    display: flex;
+    justify-content: right;
+    color: #98bf1f;
+}
+.set{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.social_network{
+    width: 464px;
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.names{
+    width: 250px;
+    height: 100%;
+    color: white;
+    font-size: 20px;
+
+
+}
+.component1{
+    margin-top: 15px;
+}
+.component{
+    margin-top: 48px;
+}
+.buttons{
+    width: 200px;
+    height: 100%;
+}
+.button_component{
+    margin-top: 25px;
+}
+.button_component2{
+    margin-top: 18px;
+}
+.notific_set{
+    width: 464px;
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.img100{
+    width: 144px;
+    height: 40px;
+    border-radius: 4px;
+}
+.img10{
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+}

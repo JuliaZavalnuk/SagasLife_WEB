@@ -15,11 +15,9 @@
   align-items: center;
   width: 170px;
   height: 35px;
-  /*border: 1px solid red;*/
 }
 
 a {
-   /* padding: 1rem 3rem;*/
     margin: 4px;
     position: relative;
     display: flex;
@@ -40,17 +38,3 @@ a {
     color:white;
    
   }
- /* .timelaps:hover,.shots:hover,.notific:hover{
-    margin: 10px;
-    position: relative;
-    height: 2px;
-    background: #aec337;
-    content: '';
-    width: 160px;
-    transform: translateX(-50%);
-    transition: width 0.4s;
-    transition-timing-function: cubic-bezier(1, -0.65, 0, 2.31);
-    left: 50%;
-    margin-top: 2rem;
-
-  }*/
