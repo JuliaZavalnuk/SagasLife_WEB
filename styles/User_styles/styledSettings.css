@@ -23,7 +23,7 @@
 }
 .e-mail{
     margin-top: 24px;
-    width: 369px;
+    width: 464px;
     height:40px;
     border: 1px solid white;
     background-color:rgba(69, 65, 105, 0.26) ;
@@ -82,6 +82,7 @@
 .buttons{
     width: 200px;
     height: 100%;
+    text-align: right;
 }
 .button_component{
     margin-top: 25px;
