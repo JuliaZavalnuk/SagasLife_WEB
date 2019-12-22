@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import '../../styles/FormStyles/FormFoot.css';
+import Facebook from './Facebook';
 
 
 class SingWith extends Component{
@@ -10,7 +11,7 @@ class SingWith extends Component{
                     or
                 </div>
                 <div className = 'ButtonDiv'>
-                    <Button name = 'facebook' />
+                    <Facebook/>
                     <Button name = 'instagram' />
                     <Button name = 'google' />
                 </div>
