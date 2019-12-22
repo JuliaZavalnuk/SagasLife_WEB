@@ -118,9 +118,7 @@ class Form extends Component{
     render(){
         return(
             <div className = 'SingIn'>
-                {this.state.isWaiting === false ? null :
-                    <ProgressBar />
-                }
+                
 
                 <form onSubmit = {this.handleSubmit} onChange = {this.handleChange} noValidate>
                   <Input onChange = {this.handleChange} name = 'Email' placeholder = 'user@mail.com' type = 'email'/>
