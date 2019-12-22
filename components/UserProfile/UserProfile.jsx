@@ -6,6 +6,7 @@ import Footer from './Footer';
 import '../../styles/User_styles/styledPage.css';
 import '../../styles/User_styles/styledContent.css';
 import '../../styles/User_styles/styledMytimelaps.css';
+import Link from 'next/link'
 
 
 class UserProfile extends Component {
@@ -19,7 +20,9 @@ class UserProfile extends Component {
                     <div className="user">
                         <div className="foto">image</div>
                         <div className="name">name</div>
+                        <Link href="/settings" passHref>
                         <div className="edit"><img src='/static/edit.png'/></div>
+                        </Link>
                         <div className="text">text</div>
                         <div className="Timelapses">Timelapses:</div>
                         <div className="Shots">Shots:</div>

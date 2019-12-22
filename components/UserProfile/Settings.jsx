@@ -65,7 +65,7 @@ class Settings extends Component {
                             </div>
                             <div className="topic">
                             Notifications
-                        </div>    
+                            </div>    
                         </div>
                     </div>
                     
@@ -103,12 +103,24 @@ class Settings extends Component {
                                 <div className="button_component2">
                                     <img width="54px" height="54px" src='/static/icon.png'/>
                                 </div>
-                                <div className="button_component2s">
+                                <div className="button_component2">
                                     <img width="54px" height="54px" src='/static/icon.png'/> 
                                 </div>
-                            </div>    
+                            </div>  
+                            <div className="topic">
+                            Manage Account
+                            </div>   
+
                         </div>
                     </div>
+                    <div className="set">
+                        <div className="manage_acc">
+                            <div className="firstbutton"> Deactivate Account</div>
+                            <div className="secondbutton"> Log out</div>
+                        </div>
+                    </div>
+
+
                 </div>
             </div>
             <Footer/> 
