@@ -65,14 +65,30 @@ class Form extends Component{
         }
 
         if (formValid(this.state.formErrors)) {
-            console.log(`
-                --submiting--
-                Email: ${this.state.email}
-                Password: ${this.state.password}
-            `)
+            store.addNotification({
+                title: 'Synced',
+                message: 'User data checking...',
+                type: 'warning',                        
+                container: 'top-center',               
+                animationIn: ["animated", "fadeIn"],     
+                animationOut: ["animated", "fadeOut"],   
+                dismiss: {
+                duration: 3000 
+                }
+            });
         }
         else {
-            console.error('FORM INVALID')
+            store.addNotification({
+                title: 'Wrong e-mail or password',
+                message: 'Please, type correct data',
+                type: 'warning',                        
+                container: 'top-center',               
+                animationIn: ["animated", "fadeIn"],     
+                animationOut: ["animated", "fadeOut"],   
+                dismiss: {
+                duration: 3000 
+                }
+            });
         }
     };
 
@@ -83,13 +99,13 @@ class Form extends Component{
 
         switch(name) {
             case 'Email':
-                formErrors.firstName = 
+                formErrors.email = 
                     emeilRegex.test(value) && value.length > 0 
                         ?""
                         :'invalid email';
                 break;
             case 'Password':
-                    formErrors.firstName = 
+                    formErrors.password = 
                         value < 6 && value.length > 0 
                             ?'minimum 6 characters'
                             : "";
