@@ -1,13 +1,10 @@
-// connect to notifications
 import { store } from 'react-notifications-component';
-
-// connect to progress bar
-import ProgressBar from '../ProgressBar/ProgressBar';
-
 import React, { Component } from 'react'
 import GreenLine from "./GreenLine";
 import Link from 'next/link';
 import '../../styles/FormStyles/Form.css';
+import { useRouter } from 'next/router';
+import { withRouter } from 'react-router-dom';
 
 const formValid = formErrors =>{
     let valid = true;
@@ -19,11 +16,14 @@ const formValid = formErrors =>{
     return valid;
 }
 
+//const router = useRouter();
+
+
+
 const emeilRegex = RegExp(/^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/);
 
 
 class Form extends Component{
-
     constructor(props){
         super(props);
         this.state = {
@@ -37,34 +37,19 @@ class Form extends Component{
         };
 
     }
+  
 
     handleSubmit = e => {
         e.preventDefault();
-        // After press button you changed state, that leads to render ProgressBar element
+        
         this.setState({isWaiting: true}); 
 
-        // In 2 seconds you make possibility to render it again
         setTimeout(() => {
             this.setState({isWaiting: false});
         }, 2000)
-        
-        // Inside If statement you need to put some user's mistake.
-        // For example: user wrote wrong login or password
-        if(false) {
-            store.addNotification({
-                title: 'Wrong e-mail or password',
-                message: 'Please, type correct data',
-                type: 'warning',                        
-                container: 'top-center',               
-                animationIn: ["animated", "fadeIn"],     
-                animationOut: ["animated", "fadeOut"],   
-                dismiss: {
-                duration: 3000 
-                }
-            });
-        }
 
         if (formValid(this.state.formErrors)) {
+            
             store.addNotification({
                 title: 'Synced',
                 message: 'User data checking...',
@@ -76,6 +61,9 @@ class Form extends Component{
                 duration: 3000 
                 }
             });
+
+            window.location.href="/user";
+            //router.push('/user');
         }
         else {
             store.addNotification({

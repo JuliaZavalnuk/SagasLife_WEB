@@ -1,14 +1,10 @@
 import React, {Component} from 'react';
 import FacebookLogin from 'react-facebook-login/dist/facebook-login-render-props'
-import '../../styles/FormStyles/FormFoot.css';
+import '../../../styles/FormStyles/FormFoot.css';
 
 export default class Facebook extends Component {
     state = {
-        isLoggedIn: false,
-        userID: '',
-        name: '',
-        email: '',
-        picture: ''
+        isLoggedIn: false
     }
 
     responseFacebook = response =>{
