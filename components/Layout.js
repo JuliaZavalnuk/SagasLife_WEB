@@ -1,23 +1,21 @@
 import Meta from "./Meta";
 import ReactNotifications from 'react-notifications-component';
 
-// Notifications styles
-import '../styles/notificationsPopUp.css';
+import '../styles/notifications/notificationsPopUp.css';
 import 'animate.css';
 
-//Progress styles 
-import '../styles/progress.css';
+import '../styles/progressBar/progress.css';
 
-//main style
-import '../styles/main.css';
+import '../styles/generic/error.css';
+import '../styles/generic/main.css';
 
 const Layout = props => {
   return (
     <>
       <Meta />
-      <div className="Layout">
+      <div className="layout">
         <ReactNotifications />
-        <div className="Content">{props.children}</div>
+        <div className="layout__wrapper">{props.children}</div>
       </div>
     </>
   );

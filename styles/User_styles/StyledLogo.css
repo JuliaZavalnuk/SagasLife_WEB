@@ -1,28 +1,22 @@
-  .firstword {
-    background-color: black;
-    font-family: JosefinSans;
-    font-size: 30px;
-    font-weight: bold;
-    color: #aec337;
-    position: absolute;
-    top:-10px;
-    left: 50px;
-   
-  }
-  .secondword {
-    background-color: black;
-    font-weight: normal;
-    font-family: JosefinSans;
-    font-size: 30px;
-    color: white;
-    position: absolute;
-    top: -10px;
-    left: 120px;
-  }
-  .img {
+.firstword {
+  background-color: black;
+  font-family: JosefinSans;
+  font-size: 24px;
+  font-weight: bold;
+  color: #aec337;
+  margin: 0 5px 0 10px;
+}
+
+.secondword {
+  background-color: black;
+  font-weight: normal;
+  font-family: JosefinSans;
+  font-size: 24px;
+  color: white;
+  margin: 0;
+}
+
+.img_logo {
   height: 30px;
   width: 30px;
-  position: absolute;
-  top: 35px;
-  left: 10px;
-  } 
+} 

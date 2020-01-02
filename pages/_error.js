@@ -1,6 +1,6 @@
 const Error = () => {
     return (
-        <div>Some error occures</div>
+        <div className="error_page">Some error occures</div>
     )
 }
 

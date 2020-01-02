@@ -8,10 +8,10 @@ class ButtonFailedImage extends Component {
         store.addNotification({
             title: 'Image has not fetched',
             message: 'Please, retry',
-            type: 'warning',                         // 'default', 'success', 'info', 'warning'
-            container: 'top-center',                // where to position the notifications
-            animationIn: ["animated", "fadeIn"],     // animate.css classes that's applied
-            animationOut: ["animated", "fadeOut"],   // animate.css classes that's applied
+            type: 'warning',                         
+            container: 'top-center',               
+            animationIn: ["animated", "fadeIn"],     
+            animationOut: ["animated", "fadeOut"],   
             dismiss: {
             duration: 5000 
             }
