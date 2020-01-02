@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import '../../styles/FormStyles/FormFoot.css';
-import Facebook from './Facebook';
-
+import Facebook from './SingWith/Facebook';
+import Google from './SingWith/Google';
 
 class SingWith extends Component{
     render(){
@@ -12,8 +12,9 @@ class SingWith extends Component{
                 </div>
                 <div className = 'ButtonDiv'>
                     <Facebook/>
+                    <Google/>
                     <Button name = 'instagram' />
-                    <Button name = 'google' />
+               
                 </div>
             </div>
             

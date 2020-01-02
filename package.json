@@ -24,6 +24,8 @@
     "react": "16.12.0",
     "react-dom": "16.12.0",
     "react-facebook-login": "^4.1.1",
+    "react-google-login": "^5.0.7",
+    "react-instagram-login": "^1.4.0",
     "react-notifications-component": "^2.2.4",
     "react-router": "^5.1.2",
     "react-router-dom": "^5.1.2",
