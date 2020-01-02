@@ -1,4 +1,4 @@
-import '../../styles/User_styles/StyledNav.css';
+import '../../styles/User_styles/styledNav.css';
 import Link from 'next/link'
 
 
@@ -6,17 +6,23 @@ import Link from 'next/link'
 
 const Nav = () => (
   <div className="ul">
-    <Link href="/mytimelaps" passHref>
-      <a>My timelapses</a>
-    </Link>
+    <div className="boxtimelaps">
+      <Link href="/mytimelaps" passHref>
+        <a className="timelaps">My Timelapses</a>
+      </Link>
+    </div>
 
-    <Link href="/myshots" passHref>
-      <a>My shots</a>
-    </Link>
+    <div className="boxshots">
+      <Link href="/myshots" passHref>
+        <a className="shots">My Shots</a>
+      </Link>
+    </div>
 
-    <Link href="/notifications" passHref>
-      <a>Notifications</a>
-    </Link>
+    <div className="boxnotific">
+      <Link href="/mynotifications" passHref>
+        <a className="notific">Notifications</a>
+      </Link>
+    </div>
  </div>
 )
 

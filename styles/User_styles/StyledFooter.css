@@ -1,33 +1,47 @@
-.bar {
-    /*position: absolute;
-    bottom: 0;
-    left: 0;*/
+.footer {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+  justify-content: space-between;
     background-color: black;
-    height:100px;
+    height: 88px;
     width:100%;
-
-    @media(max-width: 1300px) {
-      grid-template-columns: 1fr;
-      justify-content: center;
-    }
   }
-  .sagas {
-    color: white;
-   /* position: absolute;
-    top: 5px;
-    right: 300px;*/
-
-  }
-
-  .word1 {
+.block__logo{
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+}
+  .block1 {
     color: rgba(255, 255, 255, 0.85);
-   /* position: absolute;
-    top: 5px;
-    right: 200px;*/
+    position: relative;
+    width: 300px;
   }
-  .word2 {
+  .block2 {
     color: rgba(255, 255, 255, 0.85);
-    /*position: absolute;
-    top: 5px;
-    right: 30px;*/
+    position: relative;
+    width: 300px;
+    
+  }
+  .block3 {
+    position: relative;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .social {
+    margin-right: 52px;
+    position: relative;
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+  .img2,.img3{
+    margin-left: 10px ;
   }
