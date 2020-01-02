@@ -111,8 +111,8 @@ class Form extends Component{
                 <form onSubmit = {this.handleSubmit} onChange = {this.handleChange} noValidate>
                   <Input onChange = {this.handleChange} name = 'Email' placeholder = 'user@mail.com' type = 'email'/>
                   <Input name = 'Password' placeholder = '••••••••' type = 'password'/>
-                  <Ref divclassname = 'ForgotPassword' aclassname = 'refForgotPassword' text = 'Forgot Password'/>
-                  <Button divclassname = 'SingIn' buttonclassname = 'SubmitButton' type = 'submit' name = 'sing in'/>
+                  <Ref divclassname = 'ForgotPassword' aclassname = 'refForgotPassword' text = 'Forgot Password' jref = './'/>
+                  <Button divclassname = 'SingIn' buttonclassname = 'SubmitButton' type = 'submit' name = 'sing in/sing up'/>
                 </form>
                 
             </div>
@@ -142,7 +142,7 @@ const Input = props => (
   
   
   const Ref = props => (
-    <Link href = {`${props.ref}`}>
+    <Link href = {`${props.jref}`}>
     <div className = {`${props.divclassname}`}>
       <a className = {`${props.aclassname}`} >{props.text}</a>
     </div>

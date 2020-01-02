@@ -13,8 +13,7 @@ class SingWith extends Component{
                 <div className = 'ButtonDiv'>
                     <Facebook/>
                     <Google/>
-                    <Button name = 'instagram' />
-               
+                    <Button name = 'instagram'/>   
                 </div>
             </div>
             
