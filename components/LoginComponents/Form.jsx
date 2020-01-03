@@ -1,10 +1,10 @@
 import { store } from 'react-notifications-component';
 import React, { Component } from 'react'
-import GreenLine from "./GreenLine";
 import Link from 'next/link';
 import '../../styles/FormStyles/Form.css';
-import { useRouter } from 'next/router';
-import { withRouter } from 'react-router-dom';
+import TextField from '@material-ui/core/TextField';
+import {withStyles} from '@material-ui/core/styles';
+
 
 const formValid = formErrors =>{
     let valid = true;
@@ -13,15 +13,39 @@ const formValid = formErrors =>{
         val.length > 0 && (valid = false)
     });
 
-    return valid;
+    return valid; 
 }
-
-//const router = useRouter();
-
 
 
 const emeilRegex = RegExp(/^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/);
 
+
+  const CssTextField = withStyles({
+      root:
+      {
+      '& .MuiFormLabel-root': {
+        color: '#98BF1F',
+        marginLeft: '16px',
+      },
+      '& .MuiInput-underline:after': {
+        borderBottomColor: '#98BF1F',
+      },
+      '& .MuiInput-input':{
+        color: 'rgba(255, 255, 255, 0.87)',
+        marginLeft: '16px',
+      },
+      '& .MuiTextFiled':{
+        marginBottom: '16px',
+      },
+        background: 'rgba(255, 255, 255, 0.12)',
+        border: 'none',
+        width: '304px',
+        borderRadius: 3,
+        color: 'while',
+        borderBottomColor: '#98BF1F',
+    },
+    
+  })(TextField);
 
 class Form extends Component{
     constructor(props){
@@ -37,7 +61,20 @@ class Form extends Component{
         };
 
     }
-  
+
+    SubmitInfo(Stitle, Smessage) {
+      store.addNotification({
+        title: Stitle,
+        message: Smessage,
+        type: 'warning',                        
+        container: 'top-center',               
+        animationIn: ["animated", "fadeIn"],     
+        animationOut: ["animated", "fadeOut"],   
+        dismiss: {
+        duration: 3000 
+        }
+    });
+    }
 
     handleSubmit = e => {
         e.preventDefault();
@@ -49,34 +86,12 @@ class Form extends Component{
         }, 2000)
 
         if (formValid(this.state.formErrors)) {
-            
-            store.addNotification({
-                title: 'Synced',
-                message: 'User data checking...',
-                type: 'warning',                        
-                container: 'top-center',               
-                animationIn: ["animated", "fadeIn"],     
-                animationOut: ["animated", "fadeOut"],   
-                dismiss: {
-                duration: 3000 
-                }
-            });
-
+          this.SubmitInfo('Synced', 'User data checking...');
             window.location.href="/user";
-            //router.push('/user');
         }
         else {
-            store.addNotification({
-                title: 'Wrong e-mail or password',
-                message: 'Please, type correct data',
-                type: 'warning',                        
-                container: 'top-center',               
-                animationIn: ["animated", "fadeIn"],     
-                animationOut: ["animated", "fadeOut"],   
-                dismiss: {
-                duration: 3000 
-                }
-            });
+          this.SubmitInfo('Wrong e-mail or password', 'Please, type correct data');
+           
         }
     };
 
@@ -104,15 +119,18 @@ class Form extends Component{
 
 
     render(){
+        
         return(
             <div className = 'SingIn'>
                 
 
                 <form onSubmit = {this.handleSubmit} onChange = {this.handleChange} noValidate>
-                  <Input onChange = {this.handleChange} name = 'Email' placeholder = 'user@mail.com' type = 'email'/>
-                  <Input name = 'Password' placeholder = '••••••••' type = 'password'/>
-                  <Ref divclassname = 'ForgotPassword' aclassname = 'refForgotPassword' text = 'Forgot Password'/>
-                  <Button divclassname = 'SingIn' buttonclassname = 'SubmitButton' type = 'submit' name = 'sing in'/>
+
+                  <CustomInput label="Email" type = 'email' name = 'Email' onChange = {this.handleChange}/>
+                  <CustomInput label="Password" type = 'password' name = 'Password' onChange = {this.handleChange}/>
+
+                  <Ref divclassname = 'ForgotPassword' aclassname = 'refForgotPassword' text = 'Forgot Password' jref = './'/>
+                  <Button divclassname = 'SingIn' buttonclassname = 'SubmitButton' type = 'submit' name = 'sing in/sing up'/>
                 </form>
                 
             </div>
@@ -121,28 +139,16 @@ class Form extends Component{
     }
 }
 
-
-const Input = props => (
-  <div>
-    <div className = {`${props.name}`}>
-        <label className= 'FormLabel'>{props.name}</label><br/>
-        <input 
-        type = {`${props.type}`}
-        className = 'FormInput' 
-        placeholder = {`${props.placeholder}`}
-        name = {`${props.name}`}
-        noValidate
-        
-        />
-          
-    </div>
-    <GreenLine />
-  </div>
-  );
+  const CustomInput = props => (
+    <div className = 'InputDiv'>
+      <CssTextField id="custom-css-standard-input" label={`${props.label}`} type = {`${props.type}`} name = {`${props.name}`}/>
+            
+      </div>
+    );
   
   
   const Ref = props => (
-    <Link href = {`${props.ref}`}>
+    <Link href = {`${props.jref}`}>
     <div className = {`${props.divclassname}`}>
       <a className = {`${props.aclassname}`} >{props.text}</a>
     </div>

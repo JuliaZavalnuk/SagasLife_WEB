@@ -4,8 +4,10 @@ import React, { Component } from 'react'
 import SingWith from './LoginComponents/SingWith'
 
 class Login extends Component{
+
   render(){
     return(
+      
       <div className = 'FormDiv'>
         <Logo/>
         <Form/>
@@ -15,5 +17,5 @@ class Login extends Component{
   }
 }
 
-  
+
   export default Login;

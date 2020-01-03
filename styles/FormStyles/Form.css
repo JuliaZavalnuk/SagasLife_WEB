@@ -1,6 +1,11 @@
 .FormDiv {
     margin-left: auto;
     margin-right: auto;
+    margin-top: 8%;
+}
+
+.materialForm{
+    color: green;
 }
 
 .SingIn{
@@ -58,6 +63,10 @@
     color: rgba(255, 255, 255, 0.87);
     border: none;
     
+}
+.InputDiv{
+    width: 304px;
+    height: 66px;
 }
 
 .Password{
